@@ -30,4 +30,7 @@ class SearcherAgent(BaseAgent):
                 step.input_tokens = usage.input_tokens
                 step.output_tokens = usage.output_tokens
                 step.cost_usd = usage.cost_usd
-            return self.search.query(query)
+            try:
+                return self.search.query(query)
+            except Exception:
+                return []

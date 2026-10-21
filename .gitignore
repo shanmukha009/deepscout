@@ -11,3 +11,4 @@ venv/
 .env.local.save
 .env.local
 .env
+.ds_cache/

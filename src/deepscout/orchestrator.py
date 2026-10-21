@@ -93,10 +93,16 @@ def run_research(
         results = searcher.run(sub)
         return reader.run(sub, results)
 
-    with ThreadPoolExecutor(max_workers=min(len(plan.sub_questions), 5)) as pool:
+    workers = max(1, min(len(plan.sub_questions), 5))
+    with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = [pool.submit(_process_sub, sub) for sub in plan.sub_questions]
         for future in as_completed(futures):
-            all_evidence.extend(future.result())
+            try:
+                all_evidence.extend(future.result())
+            except Exception:
+                # One sub-question failing (e.g. a search rate limit) must not
+                # abort the whole run; proceed with the evidence we have.
+                continue
 
     # LLM-derived claim drafting before the Critic runs
     draft_claims = _draft_claims(llm, tracer, all_evidence)

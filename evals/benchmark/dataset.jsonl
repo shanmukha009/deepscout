@@ -1,44 +1,155 @@
-# Source: OpenAI SimpleQA benchmark (https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv)
-# 40 questions sampled with random.seed(42), balanced across 8 topic categories.
-# SimpleQA is a public dataset of short fact-seeking questions with verified short answers
-# designed to test factual precision on obscure, specific facts where LLMs are unreliable.
+# Source: OpenAI SimpleQA benchmark (https://github.com/openai/simple-evals), full set mirrored at LinkupPlatform/eval-simpleQA.
+# 150 short fact-seeking questions with verified short answers, balanced across 8 topic
+# categories. The first 40 match the original sample (seed 42); the remainder were sampled
+# with seed 42 from the full 4.3k-question set, de-duplicated against the original 40.
+# SimpleQA tests factual precision on specific, often obscure facts where LLMs hallucinate.
+{"question": "On what day, month, and year was Ahmad Jamal, a first-class cricketer, born?", "answer": "3 September 1988", "category": "sports"}
+{"question": "What month, day, and year did Ciara perform at the Joy Theater in New Orleans for her Jackie Tour?", "answer": "May 19, 2015", "category": "music"}
 {"question": "On which day, month, and year did Gyan Sudha Misra retire as a judge of the Supreme Court of India?", "answer": "27 April 2014", "category": "politics"}
-{"question": "What subject did Mary Winifred Betts, the spouse of Alexander Craig Aitken, lecture on at Otago University?", "answer": "Botony", "category": "science_technology"}
-{"question": "Who sketched the \"Taddei Tondo\" following its arrival at the Royal Academy and published a letter in the Athenaeum of 3 July 1830 praising how it was lit?", "answer": "John Constable", "category": "art"}
-{"question": "Who described Indira Gandhi as the \"Iron Lady\"?", "answer": "Henry Kissinger", "category": "politics"}
-{"question": "What is the length of the Pakistani band Jal's album \"Aadat\" released in 2004, in minutes and seconds?", "answer": "53:44", "category": "music"}
-{"question": "In what year did Anne Golden become the first woman to chair the American Heart Association board of directors?", "answer": "1991", "category": "history"}
-{"question": "What's the full name of the MS Ramaiah Medical College founder?", "answer": "Mathikere Sampige Ramaiah", "category": "history"}
-{"question": "What year did Kathryn Shaw step down as the Artistic Director of Studio 58?", "answer": "2020", "category": "art"}
-{"question": "What is the name of Nobita Nobi's paternal grandfather?", "answer": "Nobiru Nobi", "category": "tv_shows"}
-{"question": "On what day, month, and year was the footballer Michael Anderson Pereira da Silva born?", "answer": "February 16, 1983", "category": "sports"}
-{"question": "What Google Sheets formula assigns a name to the value_expression results and returns the result of the formula_expression?", "answer": "LET function", "category": "science_technology"}
-{"question": "Who directed S1E8 of Abstract: The Art of Design?", "answer": "Sarina Roma", "category": "tv_shows"}
-{"question": "How many feet deep is the Mississippi River at its source, Lake Itasca?", "answer": "3 feet", "category": "geography"}
-{"question": "Where did the Third Day song \"Nothing at All\" peak on the Billboard rock charts?", "answer": "34", "category": "music"}
-{"question": "Julie Mehretu was awarded the Barnett and Annalee Newman Award for the first time in what year?", "answer": "2013", "category": "art"}
-{"question": "How many gold medals did Kristin Otto win at the 1987 European Championships?", "answer": "5", "category": "sports"}
+{"question": "What did Daemon say to Vaemond before killing him in HOTD Season 1?", "answer": "\"Say it.\"", "category": "tv_shows"}
+{"question": "In which season and episode of Peaky Blinders does Thomas smash a nun's glasses?", "answer": "Season 5, Episode 3.", "category": "tv_shows"}
 {"question": "In what month and year did Mohamed Zahafi achieve his personal best time in Lausanne?", "answer": "June 1983", "category": "sports"}
-{"question": "Who reversed Limann's boycott of Gaddafi's Libya, allowing the Black Stars to compete in the 1982 African Cup of Nations?", "answer": "Jerry John Rawlings", "category": "politics"}
-{"question": "What is the surname of the individual who won the Polanyi Medal for outstanding contributions to the field of gas kinetics in 1982?", "answer": "Thrush", "category": "science_technology"}
-{"question": "How many voices does the Yamaha SHS-10 (1987) contain onboard?", "answer": "25", "category": "music"}
-{"question": "In Season 7 of RPDR, what song did Katya lip sync to on the episode she was eliminated?", "answer": "Roar by Katy Perry", "category": "tv_shows"}
-{"question": "What was the original name of the town of Dolores, Abra, Philippines?", "answer": "Bucao", "category": "geography"}
-{"question": "What is the name of the university where Ana Figueroa, a political activist and government official, studies and graduates from?", "answer": "University of Chile", "category": "politics"}
-{"question": "What is the second name of Gulmarg in Kashmir?", "answer": "Gaurimarg", "category": "geography"}
-{"question": "What year was the municipality of Boyacá, Boyacá, Colombia, founded?", "answer": "1537", "category": "geography"}
-{"question": "In which year did Limpho Hani work at the Swedish Embassy in Maseru?", "answer": "1985", "category": "politics"}
-{"question": "What is the age difference between Ghost's Papa Emeritus II and III in months?", "answer": "3", "category": "music"}
-{"question": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?", "answer": "36", "category": "history"}
-{"question": "In what year did the Met Gala first become a themed fashion event?", "answer": "1973", "category": "art"}
-{"question": "The Samsung Galaxy A22 4G comes with what GPU?", "answer": "Mali G52 MC2", "category": "science_technology"}
-{"question": "What is the state highway road number of the Uthamapalayam-Bodenthirapuram Road under the Theni division of Tamil Nadu, India?", "answer": "SH229", "category": "geography"}
-{"question": "What is the name of track number 6 on disc 1 of the Sen no Kiseki IV - The End of Saga - original soundtrack?", "answer": "Saint-Gral Labyrinth", "category": "music"}
+{"question": "Who directed S1E8 of Abstract: The Art of Design?", "answer": "Sarina Roma", "category": "tv_shows"}
+{"question": "How many men competed in fencing during the 1964 Summer Olympics?", "answer": "203", "category": "sports"}
 {"question": "At what zoo did August Scherl demonstrate his gyro-monorail to the public?", "answer": "Berlin Zoological Gardens", "category": "science_technology"}
+{"question": "As of the 2020 census, what was the population of the city of Fort Oglethorpe, which is in the U.S. state of Georgia?", "answer": "10,423", "category": "geography"}
+{"question": "In the case of Arthur J. Lomax v. Christina Ortiz-Marquez that was argued in the Supreme Court of the United States, what was the name of the lead attorney representing the petitioner?", "answer": "Brian T. Burgess", "category": "politics"}
+{"question": "What was the hexadecimal assigned to the Crayola color known as \"Lemon Yellow\"?", "answer": "#FFFF9F", "category": "art"}
+{"question": "How many inductees did the American Classical Hall of Fame have in 2008?", "answer": "Six.", "category": "music"}
+{"question": "What place did Starr Andrews come in at the novice level at the 2016 U.S. Championships?", "answer": "Sixth", "category": "sports"}
+{"question": "In which year did Limpho Hani work at the Swedish Embassy in Maseru?", "answer": "1985", "category": "politics"}
+{"question": "What was the title of Critical Role's 33rd one-shot episode that aired on August 29, 2019?", "answer": "Dalen's Closet", "category": "tv_shows"}
+{"question": "Who won the Heinz Hopf Prize in 2019?", "answer": "Ehud Hrushovski", "category": "science_technology"}
+{"question": "Who designed the look for the Ukrainian Order for Courage Award?", "answer": "Mykola Lebid", "category": "art"}
+{"question": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?", "answer": "36", "category": "history"}
+{"question": "With what award was Sheila Levrant de Bretteville honored in 2009 by the New York Art Directors Club?", "answer": "Grandmaster award", "category": "art"}
+{"question": "To whom was A. Wallis Myers married?", "answer": "Lilian Gentry", "category": "sports"}
+{"question": "On which day, month, and year was the first race of the Two Oceans Marathon in Cape Town?", "answer": "2 May 1970", "category": "sports"}
+{"question": "Who served as the President of the Philippines after José Paciano Laurel y García?", "answer": "Sergio Osmeña", "category": "politics"}
+{"question": "According to the 2011 census of India, after Hindi, which is the second fastest growing language of India, followed by Meitei (Manipuri) in third place and Bengali in fourth place?", "answer": "Kashmiri", "category": "geography"}
+{"question": "What is the length, in minutes and seconds, of the standard edition of Kelly Clarkson's album, \"Meaning of Life\"?", "answer": "44 minutes & 8 seconds", "category": "music"}
+{"question": "What was the first and last name of the person who designed the historic Emil J. Oberhoffer House in Lakeville, Minnesota, United States?", "answer": "Paul Haugen", "category": "history"}
 {"question": "During what year did Pipilotti Rist receive the Premio 2000 prize?", "answer": "1997", "category": "art"}
+{"question": "Who won the gold medal in the women's individual foil during the 1964 Summer Olympics?", "answer": "Ildiko Rejto-Ujlaki", "category": "sports"}
+{"question": "What day, month, and year was the album \"Beauty Marks\" by Ciara released on CD in Japan?", "answer": "June 5, 2019", "category": "music"}
+{"question": "How many additional dollars did Carmen and Natalie borrow from their uncle Cicero in Season 2 of The Bear?", "answer": "$500,000", "category": "tv_shows"}
+{"question": "In what year did Francesco \"Franco\" Giordano become a member of the Italian Communist Party?", "answer": "1974", "category": "politics"}
 {"question": "What did Robert Southey state was the singular diagnosis for Horatio Lord Nelson's illness and subsequent evacuation during the San Juan expedition in 1780?", "answer": "Dysentery", "category": "history"}
+{"question": "Black Gryph0n and Baasik collaborated on which fan-made song in 2021 about Hazbin Hotel's character Alastor?", "answer": "Insane", "category": "music"}
+{"question": "What subject did Mary Winifred Betts, the spouse of Alexander Craig Aitken, lecture on at Otago University?", "answer": "Botony", "category": "science_technology"}
+{"question": "In what year did Tülay Adalı become a Fellow of the American Institute for Medical and Biological Engineering?", "answer": "2008", "category": "science_technology"}
+{"question": "How many referees were selected from the South American Football Confederation (CONMEBOL) for the 2010 FIFA World Cup in Durban, South Africa?", "answer": "6", "category": "sports"}
+{"question": "What is the exact number of visitors who visited Edinburgh Castle in 2018?", "answer": "2,111,578", "category": "geography"}
+{"question": "What is the name of the 10th King of Nepal?", "answer": "Birendra Bir Bikram Shah Dev", "category": "history"}
+{"question": "Who won the Benjamin Franklin Medal for Computer and Cognitive Science in 2003?", "answer": "John McCarthy", "category": "science_technology"}
+{"question": "What year was the municipality of Santo Domingo, Antioquia, Colombia, founded?", "answer": "1778", "category": "geography"}
+{"question": "Who described Indira Gandhi as the \"Iron Lady\"?", "answer": "Henry Kissinger", "category": "politics"}
+{"question": "Which senator introduced the Act Prohibiting Importation of Slaves into the Senate?", "answer": "James Turner", "category": "politics"}
+{"question": "What is the state highway road number of the Uthamapalayam-Bodenthirapuram Road under the Theni division of Tamil Nadu, India?", "answer": "SH229", "category": "geography"}
+{"question": "In which city was John Gilbert Layton raised?", "answer": "Hudson", "category": "geography"}
+{"question": "What was the day, month, and year in which the L and L Building was added to the National Register of Historic Places?", "answer": "December 19, 2008", "category": "history"}
+{"question": "Who was the goalkeeper with the most clean sheets in the 2019-2020 Primeira Liga?", "answer": "Agustín Marchesín", "category": "sports"}
+{"question": "The Samsung Galaxy A22 4G comes with what GPU?", "answer": "Mali G52 MC2", "category": "science_technology"}
+{"question": "What is the name of the small town near which the Douglas C-47A ZS-EJK, operated by Comair Ltd, crashed into a mountain in October 1982?", "answer": "Graskop", "category": "geography"}
+{"question": "In which year was Stefan Parkman, the conductor, awarded the Order of the Dannebrog?", "answer": "1997", "category": "music"}
+{"question": "In what year did Knud Nellemose create the marble church statue of Søren Kierkegaard?", "answer": "1972", "category": "art"}
+{"question": "How many maxi challenges did Sharon Needles win in Season 4 of RPDR?", "answer": "4", "category": "tv_shows"}
+{"question": "In what date, month, and year did Ronald Reagan nominate Jean Galloway Bissell, the U.S. circuit judge, to a new seat?", "answer": "24 May 1984", "category": "politics"}
+{"question": "What was the Victoria and Albert Museum initially known as when it was established in 1852?", "answer": "Museum of Manufactures", "category": "art"}
+{"question": "In Season 7 of RPDR, what song did Katya lip sync to on the episode she was eliminated?", "answer": "Roar by Katy Perry", "category": "tv_shows"}
+{"question": "In which month and year did KTH's R1 reactor achieve criticality?", "answer": "July 1954", "category": "science_technology"}
+{"question": "On what day, month, and year did King Louis II's, also known as King Louis XIII of France, reign as King of Navarre end?", "answer": "20 October 1620", "category": "history"}
+{"question": "On what day, month, and year did the first Bennett Cup auto race, for a prize sponsored by New York Herald publisher James Gordon Bennett Jr., begin as five entrants departed from the Parc de Saint-Cloud, near Paris, on a 566-kilometer (352 miles) trip to Lyon?", "answer": "June 14th, 1900", "category": "sports"}
 {"question": "What day, month, and year was Peicho Peev, the Bulgarian chess International Master, born?", "answer": "2 April 1940", "category": "sports"}
+{"question": "What month and year was the Tigray People's Liberation Front removed from the list of terrorist organizations by the Ethiopian government?", "answer": "March 2023.", "category": "politics"}
+{"question": "What is the length of the Pakistani band Jal's album \"Aadat\" released in 2004, in minutes and seconds?", "answer": "53:44", "category": "music"}
+{"question": "Which Chinese president was nicknamed \"Mr. Democracy?\"", "answer": "Lee Teng-hui.", "category": "politics"}
+{"question": "How many minutes did the Fairey Albacore with Taurus XII used in World War II take to reach 6000 feet altitude in its time to altitude specification?", "answer": "8", "category": "history"}
+{"question": "Who sketched the \"Taddei Tondo\" following its arrival at the Royal Academy and published a letter in the Athenaeum of 3 July 1830 praising how it was lit?", "answer": "John Constable", "category": "art"}
+{"question": "In what year did conductor David Randolph graduate from City College of New York?", "answer": "1936", "category": "music"}
+{"question": "Who won the Paris Kanellakis Theory and Practice Award in 2002?", "answer": "Peter Franaszek", "category": "science_technology"}
+{"question": "How many voices does the Yamaha SHS-10 (1987) contain onboard?", "answer": "25", "category": "music"}
+{"question": "How old was Clint Ballard Jr. when he attended a musical program for gifted students at the University of North Texas?", "answer": "11 years.", "category": "music"}
+{"question": "What was the original name of the town of Dolores, Abra, Philippines?", "answer": "Bucao", "category": "geography"}
+{"question": "Who served as the first Deputy Commissioner of the Pherzawl District, located in the southern part of Manipur, India?", "answer": "Shri A.Tombikanta Singh", "category": "geography"}
+{"question": "How many prints of Samuel Buckle, the early English photographer, did Sir Albert buy in 1854?", "answer": "9", "category": "art"}
+{"question": "What year was the municipality of Anorí, Antioquia, Colombia, founded?", "answer": "1808", "category": "geography"}
+{"question": "In what episode and season of Scandal did Olivia find out that her mother is a terrorist?", "answer": "Season 3 Episode 9", "category": "tv_shows"}
 {"question": "In Severance, whom does Mark Scout replace as department head?", "answer": "Peter Kilmer", "category": "tv_shows"}
-{"question": "What is the number of years that Top Thrill Dragster held the record for the tallest and fastest roller coaster in the world?", "answer": "Two", "category": "sports"}
-{"question": "In what year did Augustus De Morgan publish the article \"Trochoidal Curve\" in the Penny Cyclopaedia?", "answer": "1843", "category": "science_technology"}
+{"question": "In which month and year did Sir Frederick Lugard organize the West African Frontier Force?", "answer": "August 1897", "category": "history"}
+{"question": "What was the 49th state that recognized Juneteenth as a holiday?", "answer": "Hawaii", "category": "politics"}
+{"question": "Who became the winner of the first-ever women's event in the Nash Cup in Canada?", "answer": "Maria Toorpakai Wazir", "category": "sports"}
+{"question": "In the Boyd family crest, the dexter hand erect in pale has how many fingers bowed inward?", "answer": "2", "category": "art"}
+{"question": "What primary school did Dua Lipa attend before moving to Kosovo with her family?", "answer": "Fitzjohn's Primary School", "category": "music"}
+{"question": "In what city and state did Colin Pittendrigh die?", "answer": "Bozeman, Montana", "category": "geography"}
+{"question": "What Google Sheets formula assigns a name to the value_expression results and returns the result of the formula_expression?", "answer": "LET function", "category": "science_technology"}
+{"question": "What is Daryl Dixon's blood type on The Walking Dead (TV series)?", "answer": "O- blood type.", "category": "tv_shows"}
+{"question": "In what year did Teleri Bevan become the deputy head of programs for BBC Wales?", "answer": "1981", "category": "tv_shows"}
+{"question": "What famous line does Prince Aemond say to his mother, Alicent, when he loses his eye in House of the Dragon?", "answer": "\"Do not mourn me, Mother. It was a fair exchange. I may have lost an eye, but I gained a dragon.\"", "category": "tv_shows"}
+{"question": "Who played the character Dr. Maxwell Stanton in the TV show \"In the House\" for Seasons 3-5?", "answer": "Alfonso Ribeiro", "category": "tv_shows"}
+{"question": "On what day, month, and year was the death of Doski Azad, the transgender woman from Iraqi Kurdistan, discovered?", "answer": "January 31, 2022.", "category": "politics"}
+{"question": "In what year was the beetle species Glipa angustilineata described?", "answer": "1993", "category": "science_technology"}
+{"question": "Who was the umpire in the 1980 Gillette Cup match between Devon and Cornwall held on July 2, 1980?", "answer": "Ken Palmer & Roy Palmer", "category": "sports"}
+{"question": "In what year was American chemist Eger Vaughan Murphree awarded the Industrial Research Institute Medal?", "answer": "1953", "category": "science_technology"}
+{"question": "Which school did Lyndon B. Johnson briefly teach in Pearsall?", "answer": "Pearsall High School", "category": "politics"}
+{"question": "What was Hank Green's character, The Fix, a manifestation of on Dimension 20's Mentopolis?", "answer": "hyperfixation", "category": "tv_shows"}
+{"question": "Please tell me the name of the book Cindy Sherman published in 2003.", "answer": "\"Cindy Sherman: The Complete Untitled Film Stills\"", "category": "art"}
+{"question": "What was the name of the first principal of Tyndale Biscoe School in Srinagar, Kashmir?", "answer": "Reverend J.H.Knowles", "category": "history"}
+{"question": "What is the full name of the American food scientist who created the first frozen fish sticks in the 1950s?", "answer": "Aaron Leo Brody", "category": "science_technology"}
+{"question": "What is the age difference between Ghost's Papa Emeritus II and III in months?", "answer": "3", "category": "music"}
+{"question": "In what church was the organ installed in 2000 at St. John's Church, Gateshead Fell, previously located?", "answer": "St Aidan's Church, Blackhill, Consett", "category": "music"}
+{"question": "What year did Kathryn Shaw step down as the Artistic Director of Studio 58?", "answer": "2020", "category": "art"}
+{"question": "On what date (day/month/year) was William Beechey (British portraitist) granted a coat of arms?", "answer": "16 February 1829", "category": "art"}
+{"question": "What is the name of Nobita Nobi's paternal grandfather?", "answer": "Nobiru Nobi", "category": "tv_shows"}
+{"question": "What is the name of the kibbutz that Simon Le Bon lived on in 1978?", "answer": "Gvulot.", "category": "music"}
+{"question": "Which year was the first time Kiki Smith participated in the Whitney Biennial?", "answer": "1991", "category": "art"}
+{"question": "What was the profession of Berlin's son in Money Heist?", "answer": "Electronics Engineer", "category": "tv_shows"}
+{"question": "On what day, month, and year did Dev Shumsher Jung Bahadur Rana's tenure as Prime Minister of Nepal begin?", "answer": "5th March 1901", "category": "politics"}
+{"question": "Who are Myrtle Eagan's parents in the show \"Severance\"?", "answer": "Kier and Imogene Eagan", "category": "tv_shows"}
+{"question": "What were the names of the three announcers of the radio show \"The American Album of Familiar Music\"?", "answer": "André Baruch, Howard Claney, and Roger Krupp.", "category": "music"}
+{"question": "What is the basin size of the Koshi River in square kilometers?", "answer": "74,500 km2", "category": "geography"}
+{"question": "In what state did Henry R. Luce, co-founder of Time Inc. and creator of TIME, LIFE, Fortune, and Sports Illustrated, first meet Reverend Billy Graham?", "answer": "South Carolina", "category": "history"}
+{"question": "Where did the Third Day song \"Nothing at All\" peak on the Billboard rock charts?", "answer": "34", "category": "music"}
+{"question": "What were the names of the two commanders sent by Mughal Emperor Aurangzeb to Sadabad Cantonment in order to suppress the rebellion in Tilpat in 1669?", "answer": "Hasan Ali Khan and Brahmdev Sisodia.", "category": "history"}
+{"question": "In what year were the first Zildjian cymbals created?", "answer": "1618", "category": "music"}
+{"question": "At what time to the nearest tenth of a second did Joeri Adams end the race, ranking in first position, in the 2007 UCI Cyclo-cross World Championships – Men's junior race?", "answer": "41:18", "category": "sports"}
+{"question": "In which year did the Portuguese explorer Gaspar Corte-Real reach Canada and find the town of Portugal Cove-St. Philip's?", "answer": "1500", "category": "history"}
 {"question": "How many seats did the Intransigent Party get at the 1983 Argentine general election?", "answer": "3", "category": "politics"}
+{"question": "What is the name of the individual in whose memory the Taj Mahal was built by Mughal Emperor Shah Jahan?", "answer": "Mumtaz Mahal", "category": "history"}
+{"question": "What was James Zwerg's father's profession?", "answer": "Dentist", "category": "history"}
+{"question": "In what subject did photographer Kemka Ajoku attain a bachelor's degree in 2020?", "answer": "Mechanical Engineering", "category": "art"}
+{"question": "In which episode and season of \"The Jeffersons\" is Charlie's secret revealed?", "answer": "Episode 17, Season 11, \"A Secret in the Back Room\"", "category": "tv_shows"}
+{"question": "Who was awarded the John J. Carty Award for the Advancement of Science in 1994?", "answer": "Marina Ratner", "category": "science_technology"}
+{"question": "What is the number of years that Top Thrill Dragster held the record for the tallest and fastest roller coaster in the world?", "answer": "Two", "category": "sports"}
+{"question": "On what date (Month/Day/Year) were two ancient cannons presented to Plymouth at Burial Hill by the British Government?", "answer": "October 4, 1921", "category": "history"}
+{"question": "Which city in Nepal is known as the \"City of Nine Hills?\"", "answer": "Nuwakot", "category": "geography"}
+{"question": "Who sketched the \"Taddei Tondo\" soon after it arrived in England and wrote this to Sir George Beaumont: \"Your important acquisition of the basso-relievo of Michael Angelo is still the chief talk of all our artists\"?", "answer": "David Wilkie", "category": "art"}
+{"question": "In what year did Anne Golden become the first woman to chair the American Heart Association board of directors?", "answer": "1991", "category": "history"}
+{"question": "In what year did the Met Gala first become a themed fashion event?", "answer": "1973", "category": "art"}
+{"question": "What's the full name of the MS Ramaiah Medical College founder?", "answer": "Mathikere Sampige Ramaiah", "category": "history"}
+{"question": "What is the surname of the judge who led the Election Tribunal that nullified Chris Ngige's 2003 Anambra governorship victory in August 2006?", "answer": "Nabaruma", "category": "politics"}
+{"question": "Who painted \"The Octoroon Girl\" in 1925?", "answer": "The painter Archibald J. Motley Jr. painted \"The Octoroon Girl\" in 1925.", "category": "art"}
+{"question": "In what year was the Society of Illustrators' first Annual Exhibition held?", "answer": "1959", "category": "art"}
+{"question": "Which day, month, and year was Admiral Royal Eason Ingersoll designated as the Commander in Chief, U.S. Atlantic Fleet?", "answer": "1 January 1942", "category": "history"}
+{"question": "In which year was the SSL SL 4000 G Series console introduced?", "answer": "1987", "category": "science_technology"}
+{"question": "What is the name of track number 6 on disc 1 of the Sen no Kiseki IV - The End of Saga - original soundtrack?", "answer": "Saint-Gral Labyrinth", "category": "music"}
+{"question": "How many gold medals did Kristin Otto win at the 1987 European Championships?", "answer": "5", "category": "sports"}
+{"question": "What day, month, and year was the municipality of Segovia, Antioquia, Colombia, founded?", "answer": "July 24th, 1869", "category": "geography"}
+{"question": "What is the second name of Gulmarg in Kashmir?", "answer": "Gaurimarg", "category": "geography"}
+{"question": "On what day, month, and year was the asteroid 207 Hedda discovered?", "answer": "17 October, 1879", "category": "science_technology"}
+{"question": "Who reversed Limann's boycott of Gaddafi's Libya, allowing the Black Stars to compete in the 1982 African Cup of Nations?", "answer": "Jerry John Rawlings", "category": "politics"}
+{"question": "On which date, month, and year was the \"King Shaka International Airport\" name approved by the South African Geographical Names Council?", "answer": "14 January 2010", "category": "geography"}
+{"question": "In which year was Mascarin Peak, the active volcano on Marion Island, renamed for the first time?", "answer": "2003", "category": "geography"}
+{"question": "What is the name of the university where Ana Figueroa, a political activist and government official, studies and graduates from?", "answer": "University of Chile", "category": "politics"}
+{"question": "On what day, month, and year was the footballer Michael Anderson Pereira da Silva born?", "answer": "February 16, 1983", "category": "sports"}
+{"question": "Who won the Benjamin Franklin Medal for Computer and Cognitive Science in 2004?", "answer": "Richard M. Karp", "category": "science_technology"}
+{"question": "What was the name of the Lieutenant Commander of UC-67 during the period from July 12 to August 2, 1917?", "answer": "Hans Nieland", "category": "history"}
+{"question": "Julie Mehretu was awarded the Barnett and Annalee Newman Award for the first time in what year?", "answer": "2013", "category": "art"}
+{"question": "In which stadium was the IPL 2015 20th match played?", "answer": "M. Chinnaswamy Stadium", "category": "sports"}
+{"question": "What year was the municipality of Boyacá, Boyacá, Colombia, founded?", "answer": "1537", "category": "geography"}
+{"question": "At age 8, on what TV show did Sicily Sewell make her first appearance?", "answer": "Sesame Street", "category": "tv_shows"}
+{"question": "What is the surname of the individual who won the Polanyi Medal for outstanding contributions to the field of gas kinetics in 1982?", "answer": "Thrush", "category": "science_technology"}
+{"question": "How many feet deep is the Mississippi River at its source, Lake Itasca?", "answer": "3 feet", "category": "geography"}
+{"question": "Where was the first B.A.S.S. Bassmaster Tournament held?", "answer": "Lake Mead", "category": "sports"}
+{"question": "In what year did Augustus De Morgan publish the article \"Trochoidal Curve\" in the Penny Cyclopaedia?", "answer": "1843", "category": "science_technology"}
+{"question": "How many minutes and seconds is the length of Sidhu Moosewala's song \"Death Route\"?", "answer": "3:37", "category": "music"}
