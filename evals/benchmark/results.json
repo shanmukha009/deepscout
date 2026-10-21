@@ -1,0 +1,824 @@
+{
+  "deepscout": {
+    "n": 40,
+    "accuracy": 0.675,
+    "abstain_rate": 0.025,
+    "mean_faithfulness": 1.0,
+    "hallucination_rate": 0.3,
+    "mean_cost_usd": 0.00641315,
+    "mean_latency_ms": 66345.76,
+    "per_question": [
+      {
+        "question": "On which day, month, and year did Gyan Sudha Misra retire as a judge of the Supreme Court of India?",
+        "category": "politics",
+        "ground_truth": "27 April 2014",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.004805,
+        "latency_ms": 108423.07
+      },
+      {
+        "question": "What subject did Mary Winifred Betts, the spouse of Alexander Craig Aitken, lecture on at Otago University?",
+        "category": "science_technology",
+        "ground_truth": "Botony",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.007176,
+        "latency_ms": 67539.41
+      },
+      {
+        "question": "Who sketched the \"Taddei Tondo\" following its arrival at the Royal Academy and published a letter in the Athenaeum of 3 July 1830 praising how it was lit?",
+        "category": "art",
+        "ground_truth": "John Constable",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.007631,
+        "latency_ms": 78688.63
+      },
+      {
+        "question": "Who described Indira Gandhi as the \"Iron Lady\"?",
+        "category": "politics",
+        "ground_truth": "Henry Kissinger",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.006561,
+        "latency_ms": 66568.79
+      },
+      {
+        "question": "What is the length of the Pakistani band Jal's album \"Aadat\" released in 2004, in minutes and seconds?",
+        "category": "music",
+        "ground_truth": "53:44",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.005325,
+        "latency_ms": 53400.34
+      },
+      {
+        "question": "In what year did Anne Golden become the first woman to chair the American Heart Association board of directors?",
+        "category": "history",
+        "ground_truth": "1991",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.004075,
+        "latency_ms": 46093.33
+      },
+      {
+        "question": "What's the full name of the MS Ramaiah Medical College founder?",
+        "category": "history",
+        "ground_truth": "Mathikere Sampige Ramaiah",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006743,
+        "latency_ms": 79947.53
+      },
+      {
+        "question": "What year did Kathryn Shaw step down as the Artistic Director of Studio 58?",
+        "category": "art",
+        "ground_truth": "2020",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006519,
+        "latency_ms": 73788.31
+      },
+      {
+        "question": "What is the name of Nobita Nobi's paternal grandfather?",
+        "category": "tv_shows",
+        "ground_truth": "Nobiru Nobi",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.005774,
+        "latency_ms": 48564.29
+      },
+      {
+        "question": "On what day, month, and year was the footballer Michael Anderson Pereira da Silva born?",
+        "category": "sports",
+        "ground_truth": "February 16, 1983",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.002804,
+        "latency_ms": 35169.97
+      },
+      {
+        "question": "What Google Sheets formula assigns a name to the value_expression results and returns the result of the formula_expression?",
+        "category": "science_technology",
+        "ground_truth": "LET function",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.006442,
+        "latency_ms": 63518.38
+      },
+      {
+        "question": "Who directed S1E8 of Abstract: The Art of Design?",
+        "category": "tv_shows",
+        "ground_truth": "Sarina Roma",
+        "correctness": "abstained",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.00507,
+        "latency_ms": 56612.95
+      },
+      {
+        "question": "How many feet deep is the Mississippi River at its source, Lake Itasca?",
+        "category": "geography",
+        "ground_truth": "3 feet",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.008731,
+        "latency_ms": 62368.0
+      },
+      {
+        "question": "Where did the Third Day song \"Nothing at All\" peak on the Billboard rock charts?",
+        "category": "music",
+        "ground_truth": "34",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.007517,
+        "latency_ms": 67144.46
+      },
+      {
+        "question": "Julie Mehretu was awarded the Barnett and Annalee Newman Award for the first time in what year?",
+        "category": "art",
+        "ground_truth": "2013",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006475,
+        "latency_ms": 77340.23
+      },
+      {
+        "question": "How many gold medals did Kristin Otto win at the 1987 European Championships?",
+        "category": "sports",
+        "ground_truth": "5",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006003,
+        "latency_ms": 59115.71
+      },
+      {
+        "question": "In what month and year did Mohamed Zahafi achieve his personal best time in Lausanne?",
+        "category": "sports",
+        "ground_truth": "June 1983",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.009666,
+        "latency_ms": 48590.1
+      },
+      {
+        "question": "Who reversed Limann's boycott of Gaddafi's Libya, allowing the Black Stars to compete in the 1982 African Cup of Nations?",
+        "category": "politics",
+        "ground_truth": "Jerry John Rawlings",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.008954,
+        "latency_ms": 80200.01
+      },
+      {
+        "question": "What is the surname of the individual who won the Polanyi Medal for outstanding contributions to the field of gas kinetics in 1982?",
+        "category": "science_technology",
+        "ground_truth": "Thrush",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006268,
+        "latency_ms": 75923.35
+      },
+      {
+        "question": "How many voices does the Yamaha SHS-10 (1987) contain onboard?",
+        "category": "music",
+        "ground_truth": "25",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.00592,
+        "latency_ms": 61085.62
+      },
+      {
+        "question": "In Season 7 of RPDR, what song did Katya lip sync to on the episode she was eliminated?",
+        "category": "tv_shows",
+        "ground_truth": "Roar by Katy Perry",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.004712,
+        "latency_ms": 54029.41
+      },
+      {
+        "question": "What was the original name of the town of Dolores, Abra, Philippines?",
+        "category": "geography",
+        "ground_truth": "Bucao",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.006511,
+        "latency_ms": 72136.46
+      },
+      {
+        "question": "What is the name of the university where Ana Figueroa, a political activist and government official, studies and graduates from?",
+        "category": "politics",
+        "ground_truth": "University of Chile",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.005282,
+        "latency_ms": 61391.05
+      },
+      {
+        "question": "What is the second name of Gulmarg in Kashmir?",
+        "category": "geography",
+        "ground_truth": "Gaurimarg",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.006399,
+        "latency_ms": 88448.63
+      },
+      {
+        "question": "What year was the municipality of Boyac\u00e1, Boyac\u00e1, Colombia, founded?",
+        "category": "geography",
+        "ground_truth": "1537",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.005474,
+        "latency_ms": 56680.27
+      },
+      {
+        "question": "In which year did Limpho Hani work at the Swedish Embassy in Maseru?",
+        "category": "politics",
+        "ground_truth": "1985",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006629,
+        "latency_ms": 77823.23
+      },
+      {
+        "question": "What is the age difference between Ghost's Papa Emeritus II and III in months?",
+        "category": "music",
+        "ground_truth": "3",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.005654,
+        "latency_ms": 55050.61
+      },
+      {
+        "question": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?",
+        "category": "history",
+        "ground_truth": "36",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006336,
+        "latency_ms": 54174.11
+      },
+      {
+        "question": "In what year did the Met Gala first become a themed fashion event?",
+        "category": "art",
+        "ground_truth": "1973",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006205,
+        "latency_ms": 63276.46
+      },
+      {
+        "question": "The Samsung Galaxy A22 4G comes with what GPU?",
+        "category": "science_technology",
+        "ground_truth": "Mali G52 MC2",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.007535,
+        "latency_ms": 64526.54
+      },
+      {
+        "question": "What is the state highway road number of the Uthamapalayam-Bodenthirapuram Road under the Theni division of Tamil Nadu, India?",
+        "category": "geography",
+        "ground_truth": "SH229",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.007399,
+        "latency_ms": 132375.71
+      },
+      {
+        "question": "What is the name of track number 6 on disc 1 of the Sen no Kiseki IV - The End of Saga - original soundtrack?",
+        "category": "music",
+        "ground_truth": "Saint-Gral Labyrinth",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.005421,
+        "latency_ms": 61571.65
+      },
+      {
+        "question": "At what zoo did August Scherl demonstrate his gyro-monorail to the public?",
+        "category": "science_technology",
+        "ground_truth": "Berlin Zoological Gardens",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.006185,
+        "latency_ms": 58282.15
+      },
+      {
+        "question": "During what year did Pipilotti Rist receive the Premio 2000 prize?",
+        "category": "art",
+        "ground_truth": "1997",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.006117,
+        "latency_ms": 58734.24
+      },
+      {
+        "question": "What did Robert Southey state was the singular diagnosis for Horatio Lord Nelson's illness and subsequent evacuation during the San Juan expedition in 1780?",
+        "category": "history",
+        "ground_truth": "Dysentery",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.007684,
+        "latency_ms": 68535.18
+      },
+      {
+        "question": "What day, month, and year was Peicho Peev, the Bulgarian chess International Master, born?",
+        "category": "sports",
+        "ground_truth": "2 April 1940",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.003711,
+        "latency_ms": 36431.79
+      },
+      {
+        "question": "In Severance, whom does Mark Scout replace as department head?",
+        "category": "tv_shows",
+        "ground_truth": "Peter Kilmer",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.005886,
+        "latency_ms": 57941.22
+      },
+      {
+        "question": "What is the number of years that Top Thrill Dragster held the record for the tallest and fastest roller coaster in the world?",
+        "category": "sports",
+        "ground_truth": "Two",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.007537,
+        "latency_ms": 61582.99
+      },
+      {
+        "question": "In what year did Augustus De Morgan publish the article \"Trochoidal Curve\" in the Penny Cyclopaedia?",
+        "category": "science_technology",
+        "ground_truth": "1843",
+        "correctness": "incorrect",
+        "faithfulness": 1.0,
+        "hallucinated": 1,
+        "cost_usd": 0.006315,
+        "latency_ms": 75904.53
+      },
+      {
+        "question": "How many seats did the Intransigent Party get at the 1983 Argentine general election?",
+        "category": "politics",
+        "ground_truth": "3",
+        "correctness": "correct",
+        "faithfulness": 1.0,
+        "hallucinated": 0,
+        "cost_usd": 0.011075,
+        "latency_ms": 84851.76
+      }
+    ]
+  },
+  "baseline": {
+    "n": 40,
+    "accuracy": 0.125,
+    "abstain_rate": 0.075,
+    "mean_faithfulness": 0.0,
+    "hallucination_rate": 0.8,
+    "mean_cost_usd": 3.305e-05,
+    "mean_latency_ms": 976.92,
+    "per_question": [
+      {
+        "question": "On which day, month, and year did Gyan Sudha Misra retire as a judge of the Supreme Court of India?",
+        "category": "politics",
+        "ground_truth": "27 April 2014",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.7e-05,
+        "latency_ms": 796.02
+      },
+      {
+        "question": "What subject did Mary Winifred Betts, the spouse of Alexander Craig Aitken, lecture on at Otago University?",
+        "category": "science_technology",
+        "ground_truth": "Botony",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.7e-05,
+        "latency_ms": 804.61
+      },
+      {
+        "question": "Who sketched the \"Taddei Tondo\" following its arrival at the Royal Academy and published a letter in the Athenaeum of 3 July 1830 praising how it was lit?",
+        "category": "art",
+        "ground_truth": "John Constable",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 4.6e-05,
+        "latency_ms": 1306.39
+      },
+      {
+        "question": "Who described Indira Gandhi as the \"Iron Lady\"?",
+        "category": "politics",
+        "ground_truth": "Henry Kissinger",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 6.4e-05,
+        "latency_ms": 1212.71
+      },
+      {
+        "question": "What is the length of the Pakistani band Jal's album \"Aadat\" released in 2004, in minutes and seconds?",
+        "category": "music",
+        "ground_truth": "53:44",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.7e-05,
+        "latency_ms": 848.83
+      },
+      {
+        "question": "In what year did Anne Golden become the first woman to chair the American Heart Association board of directors?",
+        "category": "history",
+        "ground_truth": "1991",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.3e-05,
+        "latency_ms": 619.94
+      },
+      {
+        "question": "What's the full name of the MS Ramaiah Medical College founder?",
+        "category": "history",
+        "ground_truth": "Mathikere Sampige Ramaiah",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.7e-05,
+        "latency_ms": 823.74
+      },
+      {
+        "question": "What year did Kathryn Shaw step down as the Artistic Director of Studio 58?",
+        "category": "art",
+        "ground_truth": "2020",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.1e-05,
+        "latency_ms": 822.43
+      },
+      {
+        "question": "What is the name of Nobita Nobi's paternal grandfather?",
+        "category": "tv_shows",
+        "ground_truth": "Nobiru Nobi",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 1.9e-05,
+        "latency_ms": 753.24
+      },
+      {
+        "question": "On what day, month, and year was the footballer Michael Anderson Pereira da Silva born?",
+        "category": "sports",
+        "ground_truth": "February 16, 1983",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2e-05,
+        "latency_ms": 942.74
+      },
+      {
+        "question": "What Google Sheets formula assigns a name to the value_expression results and returns the result of the formula_expression?",
+        "category": "science_technology",
+        "ground_truth": "LET function",
+        "correctness": "correct",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 9.9e-05,
+        "latency_ms": 1864.68
+      },
+      {
+        "question": "Who directed S1E8 of Abstract: The Art of Design?",
+        "category": "tv_shows",
+        "ground_truth": "Sarina Roma",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.9e-05,
+        "latency_ms": 858.08
+      },
+      {
+        "question": "How many feet deep is the Mississippi River at its source, Lake Itasca?",
+        "category": "geography",
+        "ground_truth": "3 feet",
+        "correctness": "correct",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 3.5e-05,
+        "latency_ms": 712.48
+      },
+      {
+        "question": "Where did the Third Day song \"Nothing at All\" peak on the Billboard rock charts?",
+        "category": "music",
+        "ground_truth": "34",
+        "correctness": "abstained",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 4.4e-05,
+        "latency_ms": 1136.21
+      },
+      {
+        "question": "Julie Mehretu was awarded the Barnett and Annalee Newman Award for the first time in what year?",
+        "category": "art",
+        "ground_truth": "2013",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.5e-05,
+        "latency_ms": 928.03
+      },
+      {
+        "question": "How many gold medals did Kristin Otto win at the 1987 European Championships?",
+        "category": "sports",
+        "ground_truth": "5",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.1e-05,
+        "latency_ms": 658.81
+      },
+      {
+        "question": "In what month and year did Mohamed Zahafi achieve his personal best time in Lausanne?",
+        "category": "sports",
+        "ground_truth": "June 1983",
+        "correctness": "abstained",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 3.7e-05,
+        "latency_ms": 934.05
+      },
+      {
+        "question": "Who reversed Limann's boycott of Gaddafi's Libya, allowing the Black Stars to compete in the 1982 African Cup of Nations?",
+        "category": "politics",
+        "ground_truth": "Jerry John Rawlings",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 4e-05,
+        "latency_ms": 931.6
+      },
+      {
+        "question": "What is the surname of the individual who won the Polanyi Medal for outstanding contributions to the field of gas kinetics in 1982?",
+        "category": "science_technology",
+        "ground_truth": "Thrush",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.9e-05,
+        "latency_ms": 1054.74
+      },
+      {
+        "question": "How many voices does the Yamaha SHS-10 (1987) contain onboard?",
+        "category": "music",
+        "ground_truth": "25",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.2e-05,
+        "latency_ms": 921.67
+      },
+      {
+        "question": "In Season 7 of RPDR, what song did Katya lip sync to on the episode she was eliminated?",
+        "category": "tv_shows",
+        "ground_truth": "Roar by Katy Perry",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.2e-05,
+        "latency_ms": 949.11
+      },
+      {
+        "question": "What was the original name of the town of Dolores, Abra, Philippines?",
+        "category": "geography",
+        "ground_truth": "Bucao",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.2e-05,
+        "latency_ms": 745.55
+      },
+      {
+        "question": "What is the name of the university where Ana Figueroa, a political activist and government official, studies and graduates from?",
+        "category": "politics",
+        "ground_truth": "University of Chile",
+        "correctness": "abstained",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 5e-05,
+        "latency_ms": 1328.1
+      },
+      {
+        "question": "What is the second name of Gulmarg in Kashmir?",
+        "category": "geography",
+        "ground_truth": "Gaurimarg",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 4.6e-05,
+        "latency_ms": 1112.77
+      },
+      {
+        "question": "What year was the municipality of Boyac\u00e1, Boyac\u00e1, Colombia, founded?",
+        "category": "geography",
+        "ground_truth": "1537",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.3e-05,
+        "latency_ms": 678.55
+      },
+      {
+        "question": "In which year did Limpho Hani work at the Swedish Embassy in Maseru?",
+        "category": "politics",
+        "ground_truth": "1985",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.1e-05,
+        "latency_ms": 740.42
+      },
+      {
+        "question": "What is the age difference between Ghost's Papa Emeritus II and III in months?",
+        "category": "music",
+        "ground_truth": "3",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.5e-05,
+        "latency_ms": 1539.89
+      },
+      {
+        "question": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?",
+        "category": "history",
+        "ground_truth": "36",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.5e-05,
+        "latency_ms": 806.65
+      },
+      {
+        "question": "In what year did the Met Gala first become a themed fashion event?",
+        "category": "art",
+        "ground_truth": "1973",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3e-05,
+        "latency_ms": 718.36
+      },
+      {
+        "question": "The Samsung Galaxy A22 4G comes with what GPU?",
+        "category": "science_technology",
+        "ground_truth": "Mali G52 MC2",
+        "correctness": "correct",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 2e-05,
+        "latency_ms": 717.76
+      },
+      {
+        "question": "What is the state highway road number of the Uthamapalayam-Bodenthirapuram Road under the Theni division of Tamil Nadu, India?",
+        "category": "geography",
+        "ground_truth": "SH229",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.3e-05,
+        "latency_ms": 1357.37
+      },
+      {
+        "question": "What is the name of track number 6 on disc 1 of the Sen no Kiseki IV - The End of Saga - original soundtrack?",
+        "category": "music",
+        "ground_truth": "Saint-Gral Labyrinth",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.3e-05,
+        "latency_ms": 863.92
+      },
+      {
+        "question": "At what zoo did August Scherl demonstrate his gyro-monorail to the public?",
+        "category": "science_technology",
+        "ground_truth": "Berlin Zoological Gardens",
+        "correctness": "correct",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 2.1e-05,
+        "latency_ms": 923.11
+      },
+      {
+        "question": "During what year did Pipilotti Rist receive the Premio 2000 prize?",
+        "category": "art",
+        "ground_truth": "1997",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.2e-05,
+        "latency_ms": 643.0
+      },
+      {
+        "question": "What did Robert Southey state was the singular diagnosis for Horatio Lord Nelson's illness and subsequent evacuation during the San Juan expedition in 1780?",
+        "category": "history",
+        "ground_truth": "Dysentery",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.8e-05,
+        "latency_ms": 1022.29
+      },
+      {
+        "question": "What day, month, and year was Peicho Peev, the Bulgarian chess International Master, born?",
+        "category": "sports",
+        "ground_truth": "2 April 1940",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2e-05,
+        "latency_ms": 656.91
+      },
+      {
+        "question": "In Severance, whom does Mark Scout replace as department head?",
+        "category": "tv_shows",
+        "ground_truth": "Peter Kilmer",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 3.1e-05,
+        "latency_ms": 910.77
+      },
+      {
+        "question": "What is the number of years that Top Thrill Dragster held the record for the tallest and fastest roller coaster in the world?",
+        "category": "sports",
+        "ground_truth": "Two",
+        "correctness": "correct",
+        "faithfulness": 0.0,
+        "hallucinated": 0,
+        "cost_usd": 4.8e-05,
+        "latency_ms": 1161.12
+      },
+      {
+        "question": "In what year did Augustus De Morgan publish the article \"Trochoidal Curve\" in the Penny Cyclopaedia?",
+        "category": "science_technology",
+        "ground_truth": "1843",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 2.7e-05,
+        "latency_ms": 1332.56
+      },
+      {
+        "question": "How many seats did the Intransigent Party get at the 1983 Argentine general election?",
+        "category": "politics",
+        "ground_truth": "3",
+        "correctness": "incorrect",
+        "faithfulness": 0.0,
+        "hallucinated": 1,
+        "cost_usd": 4.3e-05,
+        "latency_ms": 1937.42
+      }
+    ]
+  }
+}

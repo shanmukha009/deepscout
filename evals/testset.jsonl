@@ -1,0 +1,7 @@
+{"question": "What is retrieval-augmented generation and why is it used?", "must_mention": ["retrieval", "context", "hallucination"]}
+{"question": "What are the main risks of deploying LLM agents in production?", "must_mention": ["cost", "hallucination", "tool"]}
+{"question": "How does speculative decoding speed up LLM inference?", "must_mention": ["draft", "verify", "latency"]}
+{"question": "What is CRISPR-Cas9 and how is it used in gene editing?", "must_mention": ["guide RNA", "double-strand break", "off-target"]}
+{"question": "How do central banks use interest rates to control inflation?", "must_mention": ["monetary policy", "demand", "federal reserve"]}
+{"question": "What are the main causes and consequences of soil degradation?", "must_mention": ["erosion", "nutrients", "agriculture"]}
+{"question": "How does a transformer neural network process sequential data?", "must_mention": ["attention", "positional encoding", "tokens"]}

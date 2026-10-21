@@ -1,0 +1,58 @@
+{
+  "n": 7,
+  "mean_faithfulness": 1.0,
+  "mean_coverage": 0.0476,
+  "mean_citation_validity": 1.0,
+  "mean_cost_usd": 0.0,
+  "per_question": [
+    {
+      "question": "What is retrieval-augmented generation and why is it used?",
+      "faithfulness": 1.0,
+      "coverage": 0.3333,
+      "citation_validity": 1.0,
+      "cost_usd": 0.0
+    },
+    {
+      "question": "What are the main risks of deploying LLM agents in production?",
+      "faithfulness": 1.0,
+      "coverage": 0.0,
+      "citation_validity": 1.0,
+      "cost_usd": 0.0
+    },
+    {
+      "question": "How does speculative decoding speed up LLM inference?",
+      "faithfulness": 1.0,
+      "coverage": 0.0,
+      "citation_validity": 1.0,
+      "cost_usd": 0.0
+    },
+    {
+      "question": "What is CRISPR-Cas9 and how is it used in gene editing?",
+      "faithfulness": 1.0,
+      "coverage": 0.0,
+      "citation_validity": 1.0,
+      "cost_usd": 0.0
+    },
+    {
+      "question": "How do central banks use interest rates to control inflation?",
+      "faithfulness": 1.0,
+      "coverage": 0.0,
+      "citation_validity": 1.0,
+      "cost_usd": 0.0
+    },
+    {
+      "question": "What are the main causes and consequences of soil degradation?",
+      "faithfulness": 1.0,
+      "coverage": 0.0,
+      "citation_validity": 1.0,
+      "cost_usd": 0.0
+    },
+    {
+      "question": "How does a transformer neural network process sequential data?",
+      "faithfulness": 1.0,
+      "coverage": 0.0,
+      "citation_validity": 1.0,
+      "cost_usd": 0.0
+    }
+  ]
+}

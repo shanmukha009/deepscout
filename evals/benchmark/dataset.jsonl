@@ -1,0 +1,44 @@
+# Source: OpenAI SimpleQA benchmark (https://openaipublic.blob.core.windows.net/simple-evals/simple_qa_test_set.csv)
+# 40 questions sampled with random.seed(42), balanced across 8 topic categories.
+# SimpleQA is a public dataset of short fact-seeking questions with verified short answers
+# designed to test factual precision on obscure, specific facts where LLMs are unreliable.
+{"question": "On which day, month, and year did Gyan Sudha Misra retire as a judge of the Supreme Court of India?", "answer": "27 April 2014", "category": "politics"}
+{"question": "What subject did Mary Winifred Betts, the spouse of Alexander Craig Aitken, lecture on at Otago University?", "answer": "Botony", "category": "science_technology"}
+{"question": "Who sketched the \"Taddei Tondo\" following its arrival at the Royal Academy and published a letter in the Athenaeum of 3 July 1830 praising how it was lit?", "answer": "John Constable", "category": "art"}
+{"question": "Who described Indira Gandhi as the \"Iron Lady\"?", "answer": "Henry Kissinger", "category": "politics"}
+{"question": "What is the length of the Pakistani band Jal's album \"Aadat\" released in 2004, in minutes and seconds?", "answer": "53:44", "category": "music"}
+{"question": "In what year did Anne Golden become the first woman to chair the American Heart Association board of directors?", "answer": "1991", "category": "history"}
+{"question": "What's the full name of the MS Ramaiah Medical College founder?", "answer": "Mathikere Sampige Ramaiah", "category": "history"}
+{"question": "What year did Kathryn Shaw step down as the Artistic Director of Studio 58?", "answer": "2020", "category": "art"}
+{"question": "What is the name of Nobita Nobi's paternal grandfather?", "answer": "Nobiru Nobi", "category": "tv_shows"}
+{"question": "On what day, month, and year was the footballer Michael Anderson Pereira da Silva born?", "answer": "February 16, 1983", "category": "sports"}
+{"question": "What Google Sheets formula assigns a name to the value_expression results and returns the result of the formula_expression?", "answer": "LET function", "category": "science_technology"}
+{"question": "Who directed S1E8 of Abstract: The Art of Design?", "answer": "Sarina Roma", "category": "tv_shows"}
+{"question": "How many feet deep is the Mississippi River at its source, Lake Itasca?", "answer": "3 feet", "category": "geography"}
+{"question": "Where did the Third Day song \"Nothing at All\" peak on the Billboard rock charts?", "answer": "34", "category": "music"}
+{"question": "Julie Mehretu was awarded the Barnett and Annalee Newman Award for the first time in what year?", "answer": "2013", "category": "art"}
+{"question": "How many gold medals did Kristin Otto win at the 1987 European Championships?", "answer": "5", "category": "sports"}
+{"question": "In what month and year did Mohamed Zahafi achieve his personal best time in Lausanne?", "answer": "June 1983", "category": "sports"}
+{"question": "Who reversed Limann's boycott of Gaddafi's Libya, allowing the Black Stars to compete in the 1982 African Cup of Nations?", "answer": "Jerry John Rawlings", "category": "politics"}
+{"question": "What is the surname of the individual who won the Polanyi Medal for outstanding contributions to the field of gas kinetics in 1982?", "answer": "Thrush", "category": "science_technology"}
+{"question": "How many voices does the Yamaha SHS-10 (1987) contain onboard?", "answer": "25", "category": "music"}
+{"question": "In Season 7 of RPDR, what song did Katya lip sync to on the episode she was eliminated?", "answer": "Roar by Katy Perry", "category": "tv_shows"}
+{"question": "What was the original name of the town of Dolores, Abra, Philippines?", "answer": "Bucao", "category": "geography"}
+{"question": "What is the name of the university where Ana Figueroa, a political activist and government official, studies and graduates from?", "answer": "University of Chile", "category": "politics"}
+{"question": "What is the second name of Gulmarg in Kashmir?", "answer": "Gaurimarg", "category": "geography"}
+{"question": "What year was the municipality of Boyacá, Boyacá, Colombia, founded?", "answer": "1537", "category": "geography"}
+{"question": "In which year did Limpho Hani work at the Swedish Embassy in Maseru?", "answer": "1985", "category": "politics"}
+{"question": "What is the age difference between Ghost's Papa Emeritus II and III in months?", "answer": "3", "category": "music"}
+{"question": "How many units of the Infanterikanonvagn 72 (1952) were delivered to the Swedish army from 1953 to 1954?", "answer": "36", "category": "history"}
+{"question": "In what year did the Met Gala first become a themed fashion event?", "answer": "1973", "category": "art"}
+{"question": "The Samsung Galaxy A22 4G comes with what GPU?", "answer": "Mali G52 MC2", "category": "science_technology"}
+{"question": "What is the state highway road number of the Uthamapalayam-Bodenthirapuram Road under the Theni division of Tamil Nadu, India?", "answer": "SH229", "category": "geography"}
+{"question": "What is the name of track number 6 on disc 1 of the Sen no Kiseki IV - The End of Saga - original soundtrack?", "answer": "Saint-Gral Labyrinth", "category": "music"}
+{"question": "At what zoo did August Scherl demonstrate his gyro-monorail to the public?", "answer": "Berlin Zoological Gardens", "category": "science_technology"}
+{"question": "During what year did Pipilotti Rist receive the Premio 2000 prize?", "answer": "1997", "category": "art"}
+{"question": "What did Robert Southey state was the singular diagnosis for Horatio Lord Nelson's illness and subsequent evacuation during the San Juan expedition in 1780?", "answer": "Dysentery", "category": "history"}
+{"question": "What day, month, and year was Peicho Peev, the Bulgarian chess International Master, born?", "answer": "2 April 1940", "category": "sports"}
+{"question": "In Severance, whom does Mark Scout replace as department head?", "answer": "Peter Kilmer", "category": "tv_shows"}
+{"question": "What is the number of years that Top Thrill Dragster held the record for the tallest and fastest roller coaster in the world?", "answer": "Two", "category": "sports"}
+{"question": "In what year did Augustus De Morgan publish the article \"Trochoidal Curve\" in the Penny Cyclopaedia?", "answer": "1843", "category": "science_technology"}
+{"question": "How many seats did the Intransigent Party get at the 1983 Argentine general election?", "answer": "3", "category": "politics"}

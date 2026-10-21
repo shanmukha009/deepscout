@@ -1,0 +1,13 @@
+.env
+.env.*
+*.key
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+.pytest_cache/
+
+.env.local.save
+.env.local
+.env
